@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'code-review-ember',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'epicodusjsweek3.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
