@@ -1,4 +1,5 @@
-{ "questions": [{
+{
+  "questions": [{
     "content": "What's yr deal bro?",
     "author": "Blake",
     "notes": "Seriously."
@@ -10,5 +11,18 @@
     "content": "Who's line is it anyways",
     "author": "Stu",
     "notes": "This was a TV show"
-  }]
+  }],
+
+  "answers": [{
+      "content": "I do what I want",
+      "author": "Lisa",
+
+    }, {
+      "content": "To get to the other side",
+      "author": "Mary",
+
+    }, {
+      "content": "It's Drew Carry's line",
+      "author": "Norm",
+    }]
 }
