@@ -3,9 +3,10 @@ import Ember from 'ember';
 export default Ember.Route.extend({
     model() {
     return Ember.RSVP.hash({
-      answers: this.storefindAll('answer'),
-      questons: thisstorefindAll('question')
-    },
+      questions: this.store.findAll('question'),
+      answers: this.store.findAll('answer')
+    });
+  },
 
     actions: {
       save3(params) {
