@@ -1,0 +1,7 @@
+<h2>Here are the answers to the question: {{model.name}}</h2>
+
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}
+
+{{new-answer question=model save2="save3"}} <!-- button
