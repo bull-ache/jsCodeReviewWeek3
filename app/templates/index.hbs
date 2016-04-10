@@ -2,6 +2,7 @@
 <ul>
   {{#each model as |question|}}
      {{question-tile question=question}}
+     <h5>Popularity:{{question-rating question}}</h5>
   {{/each}}
 </ul>
 
