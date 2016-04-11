@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-export function questionRating(params) {
+export function questionPopularity(params) {
   var question = params[0];
 
   if(question.get('answers').get('length') >= 4) {
@@ -17,4 +17,4 @@ export function questionRating(params) {
   }
 }
 
-export default Ember.Helper.helper(questionRating);
+export default Ember.Helper.helper(questionPopularity);
