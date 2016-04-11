@@ -12,10 +12,11 @@ export default Ember.Route.extend({
       console.log(params);
       var question = params.question;
       question.get('answers').addObject(newAnswer);
+      this.get('answerCount').add("1");
       newAnswer.save().then(function() {
         return question.save();
       });
-      this.get('answerCount').add("1");
+      this.get('answerCount').add(params);
       this.transitionTo('question', params.question);
       }
     }

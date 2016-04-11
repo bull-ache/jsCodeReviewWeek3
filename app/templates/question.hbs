@@ -1,6 +1,6 @@
 <h2>Here are the answers to the question: {{model.content}}</h2>
-<h2>Answer Count: {{answerCount.answers}}</h2>
-{{#each model.answers as |answer|}}
+<h2>Answer Count: {{answerCount.answers.length}}</h2>
+{{#each model.answers as |answer|}} 
   {{answer-tile answer=answer}}
 {{/each}}
 
