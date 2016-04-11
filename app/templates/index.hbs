@@ -1,6 +1,6 @@
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}} 
      {{question-tile question=question}}
      {{question-rating save4="save5"}}
      <h5>Popularity:{{question-popularity question}}</h5>

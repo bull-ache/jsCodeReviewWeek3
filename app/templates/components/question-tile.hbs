@@ -3,6 +3,9 @@
     <h2{{action 'detailsHide'}}>{{question.content}}?</h2>
     <h4>Author: {{question.author}}</h4>
     <h4>Notes: {{question.notes}}</h4>
+    <h4>Thumbs up: {{question.thumbsUp}}</h4>
+    <h4>Thumbs down: {{question.thumbsDown}}</h4>
+    <h4>Total Ratings: {{question.totalVotes}}</h4>
     <h4>{{#link-to 'question' question.id}}See Answers{{/link-to}}</h4>
   {{else}}
     <h2 {{action 'detailsShow'}}>{{question.content}}?</h2>
