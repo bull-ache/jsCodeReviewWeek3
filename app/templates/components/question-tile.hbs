@@ -1,9 +1,9 @@
 
   {{#if areDetailsShowing}}
-    <h4{{action 'detailsHide'}}>{{question.content}}?</h4>
+    <h2{{action 'detailsHide'}}>{{question.content}}?</h2>
     <h4>Author: {{question.author}}</h4>
     <h4>Notes: {{question.notes}}</h4>
     <h4>{{#link-to 'question' question.id}}See Answers{{/link-to}}</h4>
   {{else}}
-    <h4 {{action 'detailsShow'}}>{{question.content}}?</h4>
+    <h2 {{action 'detailsShow'}}>{{question.content}}?</h2>
   {{/if}}

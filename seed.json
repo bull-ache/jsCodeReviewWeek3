@@ -2,15 +2,24 @@
   "questions": [{
     "content": "What's yr deal bro?",
     "author": "Blake",
-    "notes": "Seriously."
+    "notes": "Seriously.",
+    "thumbsUp": 4,
+    "thumbsDown": 4,
+    "totalVotes": 8
   }, {
     "content": "Why did the chicken cross the road?",
     "author": "Sally",
-    "notes": "Bad joke"
+    "notes": "Bad joke",
+    "thumbsUp": 5,
+    "thumbsDown": 5,
+    "totalVotes": 10
   }, {
     "content": "Who's line is it anyways",
     "author": "Stu",
-    "notes": "This was a TV show"
+    "notes": "This was a TV show",
+    "thumbsUp": 2,
+    "thumbsDown": 9,
+    "totalVotes": 11
   }],
 
   "answers": [{
