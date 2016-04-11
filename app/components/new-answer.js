@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  answerCount: Ember.inject.service(),
   addNewAnswer: false,
   actions: {
     answerFormShow() {

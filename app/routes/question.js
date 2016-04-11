@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  }),
+  answerCount: Ember.inject.service(),
 
   model(params) {
     return this.store.findRecord('question', params.question_id);
@@ -15,6 +15,7 @@ export default Ember.Route.extend({
       newAnswer.save().then(function() {
         return question.save();
       });
+      this.get('answerCount').add("1");
       this.transitionTo('question', params.question);
       }
     }
