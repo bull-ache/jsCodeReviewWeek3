@@ -1,6 +1,8 @@
 <div>
-  <!-- <h2>Answer Count: {{answerCount.answers.length}}</h2> -->
   <ul>
-    <li>{{fullAnswer}}</li>
+    <li><strong>Content:</strong>  {{answer.content}}</li>
+    <li><strong>Author:</strong>  {{answer.author}}</li>
+    <li><strong>This is both the answer content and the author, displayed with a computed property:</strong>  {{fullAnswer}}</li>
+    <button {{action "addToFavorite" answer}}>Add to Favorites</button>
   </ul>
 </div>

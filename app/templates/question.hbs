@@ -1,7 +1,7 @@
 <h2>Here are the answers to the question: {{model.content}}</h2>
 <h2>Answer Count: {{answerCount.answers.length}}</h2>
-{{#each model.answers as |answer|}} 
+{{#each model.answers as |answer|}}
   {{answer-tile answer=answer}}
 {{/each}}
-
-{{new-answer question=model save2="save3"}} <!-- button
+<h2>These are my favorite answers:</h2>{{display-favorites}}<br>
+{{new-answer question=model save2="save3"}}
